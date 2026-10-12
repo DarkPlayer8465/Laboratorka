@@ -1,0 +1,30 @@
+# Файлы сборки и кэш компиляции Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Виртуальные окружения и зависимости
+venv/
+env/
+ENV/
+.env
+.venv
+requirements.txt.log
+
+# Локальные базы данных и конфигурационные файлы пользователя
+*.db
+*.sqlite3
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Файлы операционной системы и системные логи
+.DS_Store
+Thumbs.db
+*.log
