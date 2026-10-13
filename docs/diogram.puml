@@ -83,3 +83,8 @@ UC_AddTeamCoach ..> UC_Login : <<include>>
 note bottom of UC_ViewStandings : Доступно публично\n(без авторизации)
 
 @enduml
+
+
+
+
+
