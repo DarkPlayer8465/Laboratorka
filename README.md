@@ -133,7 +133,7 @@
 |-----------|-----------|------------|
 | **Язык программирования** | Python 3.11+ | Основная логика сайта |
 | **Веб-фреймворк** | Django 5.0 | Backend и шаблоны страниц |
-| **База данных** | SQL (PostgreSQL / SQLite) | Хранение данных |
+| **База данных** | SQLite | Хранение данных |
 | **ORM** | Django ORM | Работа с БД через Python-код |
 | **Frontend** | HTML5, CSS3, JavaScript | Интерфейс пользователя |
 | **Шаблонизатор** | Django Templates | Генерация HTML-страниц |
@@ -152,14 +152,10 @@
 
 | Таблица | Назначение | Ключевые поля |
 |---------|-----------|---------------|
-| `users` | Пользователи системы | `id`, `username`, `email`, `role` |
-| `teams` | Команды | `id`, `name`, `coach_id` |
-| `team_members` | Состав команд | `team_id`, `player_id`, `status` |
-| `tournaments` | Турниры | `id`, `name`, `format`, `start_date`, `end_date` |
-| `tournament_teams` | Участие команд в турнирах | `tournament_id`, `team_id` |
-| `matches` | Матчи | `id`, `tournament_id`, `home_team_id`, `away_team_id` |
-| `standings` | Турнирные таблицы | `tournament_id`, `team_id`, `points`, `wins`, `losses` |
-| `join_requests` | Запросы на вступление | `id`, `player_id`, `team_id`, `status` |
+| `users` | Пользователи системы | `id`, `username`, `role` |
+| `teams` | Команды | `id`, `name`|
+| `team_members` | Состав команд | `team_id`, `player_id`, `player_name`|
+| `tournaments` | Турниры | `id`, `name`, `sport`  |
 
 ### Связи между таблицами
 
